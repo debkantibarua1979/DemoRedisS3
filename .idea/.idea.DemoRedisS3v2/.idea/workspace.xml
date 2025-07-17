@@ -5,15 +5,18 @@
     <projectFile kind="Docker">DemoRedisS3v2/DemoRedisS3v2.csproj</projectFile>
     <projectFile profileName="http">DemoRedisS3v2/DemoRedisS3v2.csproj</projectFile>
     <projectFile profileName="https">DemoRedisS3v2/DemoRedisS3v2.csproj</projectFile>
+    <projectFile kind="Docker">LogStackToRedisWorker/LogStackToRedisWorker.csproj</projectFile>
     <projectFile profileName="LogStackToRedisWorker">LogStackToRedisWorker/LogStackToRedisWorker.csproj</projectFile>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64b74150-d414-4e85-9eb0-394b2e7a701f" name="Changes" comment="Add Docker support and project references for LogStackToRedisWorker and SharedLibrary">
+    <list default="true" id="64b74150-d414-4e85-9eb0-394b2e7a701f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DemoRedisS3v2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DemoRedisS3v2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DemoRedisS3v2.sln" beforeDir="false" afterPath="$PROJECT_DIR$/DemoRedisS3v2.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DemoRedisS3v2/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/DemoRedisS3v2/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DemoRedisS3v2/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogStackToRedisWorker/DockerFile" beforeDir="false" afterPath="$PROJECT_DIR$/LogStackToRedisWorker/DockerFile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,46 +26,52 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "debkantibarua1979"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;debkantibarua1979&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/debkantibarua1979/DemoRedisS3.git",
-    "accountId": "dc2d2fc3-28b8-4220-9413-86bd1c4f9c92"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/debkantibarua1979/DemoRedisS3.git&quot;,
+    &quot;accountId&quot;: &quot;dc2d2fc3-28b8-4220-9413-86bd1c4f9c92&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///Users/dev-565790/RiderProjects/DemoRedisS3v2/DemoRedisS3v2/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/dev-565790/RiderProjects/DemoRedisS3v2/DemoRedisS3v2/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestClient/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2zzbm1ZwbCcVQsRhIA1ovvmF8gq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.DemoRedisS3v2/Dockerfile build.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.DemoRedisS3v2: http">
+}</component>
+  <component name="RunManager" selected="Docker.DemoRedisS3v2/Dockerfile build">
     <configuration name="ConsoleApp1" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -126,6 +135,18 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="DemoRedisS3v2/Dockerfile build" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="mcr.microsoft.comdotnetsdk7.0_build" />
+          <option name="buildCliOptions" value="--target build" />
+          <option name="buildOnly" value="true" />
+          <option name="sourceFilePath" value="DemoRedisS3v2/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="DemoRedisS3v2/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -137,21 +158,29 @@
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
-    <configuration name="LogStackToRedisWorker/DockerFile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+    <configuration name="LogStackToRedisWorker/Dockerfile: Compose Deployment" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
           <option name="containerName" value="logstacktoredisworker" />
           <option name="contextFolderPath" value="$PROJECT_DIR$" />
-          <option name="sourceFilePath" value="LogStackToRedisWorker/DockerFile" />
+          <option name="sourceFilePath" value="LogStackToRedisWorker/Dockerfile" />
         </settings>
       </deployment>
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.DemoRedisS3v2/Dockerfile build" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -161,7 +190,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1752737003493</updated>
-      <workItem from="1752737004661" duration="9058000" />
+      <workItem from="1752737004661" duration="10139000" />
+      <workItem from="1752756055759" duration="2768000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize ASP.NET Core project with basic configuration and logging settings">
       <option name="closed" value="true" />
@@ -203,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752753401887</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add TestClient project with references to SharedLibrary and StackExchange.Redis">
+      <option name="closed" value="true" />
+      <created>1752754663201</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1752754663201</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +256,7 @@
     <MESSAGE value="Add Redis caching and logging services with Docker support" />
     <MESSAGE value="Redis version fixed" />
     <MESSAGE value="Add Docker support and project references for LogStackToRedisWorker and SharedLibrary" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Docker support and project references for LogStackToRedisWorker and SharedLibrary" />
+    <MESSAGE value="Add TestClient project with references to SharedLibrary and StackExchange.Redis" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add TestClient project with references to SharedLibrary and StackExchange.Redis" />
   </component>
 </project>
