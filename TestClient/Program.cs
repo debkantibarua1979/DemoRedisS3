@@ -5,7 +5,7 @@ using StackExchange.Redis;
 
 var client = new HttpClient
 {
-    BaseAddress = new Uri("http://localhost:5000")
+    BaseAddress = new Uri("http://localhost:5050")
 };
 
 var redis = await ConnectionMultiplexer.ConnectAsync("localhost:6379");

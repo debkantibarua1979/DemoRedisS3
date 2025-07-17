@@ -1,0 +1,37 @@
+services:
+  redis:
+    image: redis:8
+    container_name: redis
+    ports:
+      - "6379:6379"
+
+  api:
+    build:
+      context: .
+      dockerfile: DemoRedisS3v2/Dockerfile
+    container_name: flightsearch-api
+    ports:
+      - "5050:80"
+    depends_on:
+      - redis
+    environment:
+      - Redis__Endpoint=redis:6379
+    volumes:
+      - ./logstack-data:/app/logstack-data
+      - ./SharedLibrary:/src/SharedLibrary    
+  
+  
+  worker:
+    build:
+      context: .
+      dockerfile: LogStackToRedisWorker/Dockerfile
+    container_name: flightsearch-worker
+    depends_on:
+      - redis
+    environment:
+      - Redis__Endpoint=redis:6379
+    volumes:
+      - ./logstack-data:/app/logstack-data
+      - ./logstack-archive:/app/logstack-archive
+      - ./SharedLibrary:/src/SharedLibrary
+  
