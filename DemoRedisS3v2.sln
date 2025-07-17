@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoRedisS3v2", "DemoRedisS3v2\DemoRedisS3v2.csproj", "{C979132A-A9AA-4354-9246-4F5BAD39C0FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogStackToRedisWorker", "LogStackToRedisWorker\LogStackToRedisWorker.csproj", "{54D787D5-95F1-4718-BF96-7B9A68A97FA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedLibrary", "SharedLibrary\SharedLibrary.csproj", "{9D3AE10D-90E3-445A-B1A0-B565EF6B56D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{C979132A-A9AA-4354-9246-4F5BAD39C0FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C979132A-A9AA-4354-9246-4F5BAD39C0FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C979132A-A9AA-4354-9246-4F5BAD39C0FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54D787D5-95F1-4718-BF96-7B9A68A97FA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54D787D5-95F1-4718-BF96-7B9A68A97FA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54D787D5-95F1-4718-BF96-7B9A68A97FA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54D787D5-95F1-4718-BF96-7B9A68A97FA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D3AE10D-90E3-445A-B1A0-B565EF6B56D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D3AE10D-90E3-445A-B1A0-B565EF6B56D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D3AE10D-90E3-445A-B1A0-B565EF6B56D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D3AE10D-90E3-445A-B1A0-B565EF6B56D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,17 @@
+FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
+WORKDIR /app
+
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+WORKDIR /src
+COPY ["FlightSearch.LogstackToRedisWorker/FlightSearch.LogstackToRedisWorker.csproj", "FlightSearch.LogstackToRedisWorker/"]
+COPY ["FlightSearch.Models/FlightSearch.Models.csproj", "FlightSearch.Models/"]
+RUN dotnet restore "FlightSearch.LogstackToRedisWorker/FlightSearch.LogstackToRedisWorker.csproj"
+COPY . .
+WORKDIR "/src/FlightSearch.LogstackToRedisWorker"
+RUN dotnet build -c Release -o /app/build
+RUN dotnet publish -c Release -o /app/publish
+
+FROM base AS final
+WORKDIR /app
+COPY --from=build /app/publish .
+ENTRYPOINT ["dotnet", "FlightSearch.LogstackToRedisWorker.dll"]

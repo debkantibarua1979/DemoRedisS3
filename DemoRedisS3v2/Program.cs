@@ -1,6 +1,5 @@
 using DemoRedisS3v2.Services.Implementations;
 using DemoRedisS3v2.Services.Interfaces;
-using FlightSearch.API.Services;
 using StackExchange.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
